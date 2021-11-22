@@ -7,12 +7,12 @@
     <title>Additional</title>
     <style>
         pre.dline  {
-            line-height: 1.0em;
+            line-height: 0.8em;
         }
     </style>
 </head>
 <body>
-    <h1 align="center">Заголовок первого уровня</h1>
+    <h1 style="text-align: center">Заголовок первого уровня</h1>
     <h2>Предварительно форматированный текст:</h2>
     <pre> x | o |
 ‐‐‐‐‐‐‐‐‐‐‐
@@ -25,17 +25,17 @@
  <hr>
  <h2>Семантические и функциональные строчные теги</h2>
  <p>Пожелания автора:<br>
-<font color="red"><s>Данный текст убрать из монографии</s></font> и заменить его на <font color = "blue"><u>вновь помещённый текст.</u></font></p>
+<s style="color: red">Данный текст убрать из монографии</s> и заменить его на <u style="color: blue">вновь помещённый текст.</u></p>
 <hr>
 <h2>Работа со строчными и блоковыми цитатами</h2>
 <p>Цитата короткая:<br>
 <q><i>И всё­-таки она вертится!</i></q></p>
 <P>Цитата занимающая несколько предложений:</P>
-<pre><blockquote>О сколько нам открытий чудных
+<pre><cite>О сколько нам открытий чудных
 Готовят просвещенья дух
 И опыт, сын ошибок трудных,
 И гений, парадоксов друг,
-И случай, бог изобретатель...</blockquote></pre>
+И случай, бог изобретатель...</cite></pre>
 <hr>
 <h2>Семантические и функциональные строчные теги</h2>
 <p><strong>Тэг &lt;STRONG&gt; делает данный фрагмент текста более важным.</strong> <em>Тэг &lt;em&gt; менее важным.</em>
@@ -51,7 +51,7 @@
 <!--Нужно ли теги samp и code и любые другие типа address, если не трубуется сохранение форматирования заключать в блочный тег <p>?-->
 <samp>Hello, World!</samp>
 <p>Однако в браузере у нас будет отображаться результат выполнения этой программы:</p>
-<p><strong><font size = "6">Hello, World!</font></strong></p>
+<p><strong><span style="font-size: x-large; ">Hello, World!</span></strong></p>
 <hr>
 <h2>Комментарии и литералы(мнемоники) в HTML</h2>
 <pre><kbd>&lt;!‐‐ это комментарий ‐‐&gt;
@@ -59,21 +59,19 @@
                 занимающий более одной строки ‐‐&gt;</kbd></pre>
 <hr>
 <h2>Теги над­ и подстрочных символов</h2>
-<h3 align = "center">Магазин работает:</h3>
-<p align = "center">c 08<sup><u>30 </u></sup> до 18<sup><u>30 </u></sup><br>
-    обед с 13<sup><u>00</u></sup> до 14<sup><u>00</u></sup><br>
-    выходной: <u>суббота</u>, <u>воскресенье</u></p>
+    <div style="text-align:center; font-size: x-large;"><strong>Магазин работает:<br></strong></div>
+    <div style="text-align:center;">c 08<sup><u>30 </u></sup> до 18<sup><u>30 </u></sup><br>
+        обед с 13<sup><u>00</u></sup> до 14<sup><u>00</u></sup><br>
+        выходной: <u>суббота</u>, <u>воскресенье</u></div>
 <hr>
 <h2>Вот такой текст</h2>
-<pre class ="dline"><strong><font size = "5" face = "Times">Э  о  р  с  о   е   ё  ы   т  к  т
-   т  п  о  т   в  с  л   й   е  с</font></strong></pre>
+<pre class ="dline"><strong><span style="font-size: large; font-family: Times,serif; ">Э  о  р  с  о   е   ё  ы   т  к  т
+   т  п  о  т   в  с  л   й   е  с</span></strong></pre>
 <hr>
 <h2>Акроним и курсив</h2>
 <p>ТФ: Y(<i>x</i>)=e<sup>­<i>-i&pi;x</i></sup>+log<sub><i>x</i></sub>4</p>
 <hr>
 <h2>Тег small внтури абзаца</h2>
-<p align = "right"><small>Создано при помощи блокнота&copy;</small></p>
-
-
+    <div style="text-align:right;"><p><small>Создано при помощи блокнота&copy;</small></p></div>
 </body>
 </html>
