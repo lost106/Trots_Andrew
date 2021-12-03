@@ -1,0 +1,36 @@
+IMG.fig{
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px;
+        }
+.strelka-left,
+.strelka-top,
+.strelka-right
+{
+    margin: 10px 8px;
+    border-radius: 50%;
+    border: 2px solid #337AB7;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 12px 4px #BFE2FF;
+    background: radial-gradient(#fff, #BFE2FF);
+}
+.strelka-left path,
+.strelka-top path,
+.strelka-right path{
+    fill: rgba(191, 226, 255, 0.6);
+    stroke-width: 2;
+    stroke: #337AB7;   
+    transition: fill 0.5s ease-out;
+}
+.strelka-left:hover path,
+.strelka-top:hover path,
+.strelka-right:hover path {
+    fill: #337AB7;
+}
+.strelka-top {
+    transform: rotate(90deg);
+}
+.strelka-right {
+    transform: rotate(180deg);
+}
