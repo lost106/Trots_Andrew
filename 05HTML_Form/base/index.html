@@ -94,7 +94,9 @@
                 <div class="someDiv">
                     <input type="text" name="loginReview" id="lo1" required><label for="lo1">* Имя</label>
                 </div>
-                    <input type="email" name="emailAddressUser" id="emailAddress" required><label for="emailAddress">* e-mail</label><br>
+                <div class="someDiv">
+                    <input type="email" name="emailAddressUser" id="emailAddress" required><label for="emailAddress">* e-mail</label>
+                </div>
                     <label>
                         <textarea name="formSend" cols="20" rows="3">Форма отправки</textarea>
                     </label><br>
@@ -159,6 +161,7 @@
                             <label><input type="text" name="SearchName" pattern="^[а-яА-ЯёЁ]+$" placeholder="Только русские буквы" required></label>
                         </div>
                         <div class="someDiv">
+                            <!--https://regex101.com/-->
                             <label><input type="tel" name="phoneNumber" pattern="^\+[0-9]{3}-[0-9]{2}-[0-9]{7}$" placeholder="+XXX-XX-XXXXXXX" required></label>
                         </div>
                             <input type="submit" value="Проверить">
