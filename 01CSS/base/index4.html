@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programm on Python - part 1</title>
-    <link rel="stylesheet" href="style1.css"/>
+    <style> 
+         @import "style2.css" print; 
+         @import "style1.css" screen;
+    </style>
+    
     
 </head>
 <body>
-<img  src="../base/multimedia/Icon-Python.7bb116a5.png" alt="LogoPython" class="fig" title="Логотип Python">
-<h1>HOW-TO: Программа на Python, Часть 1</h1>
-
+<div style="text-align:center;"> <h1>HOW-TO: Программа на Python, Часть 1</h1></div>
 
     <ul>
-        <li><a href="index1.html"><i>Программа на Python — часть 1</i></a></li>
-        <li><a href="index2.html"><i>Программа на Python — часть 2</i></a></li>
-        <li><a href="index3.html"><i>Программа на Python — часть 3</i></a></li>            
+        <li><i>Программа на Python — часть 1</i></li>
+        <li><i>Программа на Python — часть 2</i></li>
+        <li><i>Программа на Python — часть 3</i></li>            
     </ul>
-    <h2 id="content">Содержание</h2>
+    <h2>Содержание</h2>
     <h3>HOW-TO: Программа на Python, Часть 1</h3>   
     <ul>
-        <li><a href ="#firstprogramm">Наша первая программа</a></li>
-        <li><a href ="#simpleFor">Пример цикла For</a></li>
+        <li><u>Наша первая программа</u></li>
+        <li><u>Пример цикла For</u></li>
     </ul>
     <p>Из множества существующих языков программирования Python — один из самых лёгких
     в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
@@ -30,8 +32,7 @@
     обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
     создание консольных приложений, а в следующей — программирование графических
 и   нтерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.</p>
-<h2 id="firstprogramm">Наша первая программа</h2>
-<a href="#content">К содержанию</a>
+<h2>Наша первая программа</h2>
 <p>Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает
     каждая строка и пойдём дальше.</p>
 <p>Введите эти 4 строки:</p>
@@ -51,8 +52,7 @@
     Hello there, Ferd Burphel!<br>
     greg@earth:~/python_examples$</code>
 <p>Вот и всё.</p>
-<h2 id ="simpleFor">Пример цикла For</h2>
-<a href="#content">К содержанию</a>
+<h2>Пример цикла For</h2>
 <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
     редактор и наберите следующую программу:</p>
     <pre><code>#!/usr/bin/env python
@@ -61,13 +61,5 @@ for cntr in range(0,10):
     <p><i>Не забудьте поставить символ табуляции перед строкой «print cntr».</i> Это важно. В
         Python для указания на блоки кода используются не круглые <strong>«(»</strong> и фигурные <strong>«{»</strong> скобки
         как в других языках программирования, а отступы.</p>
-        
-<table width="100%">
-    <tr>
-        <td><a href="#"  title="переход на предыдущую страницу"><svg class="strelka-left" viewbox="0 0 60 100" xmlns="http://www.w3.org/2000/svg"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z"></path></svg></a></td>
-        <td style="text-align: center;"><a href="#content" title="к содержанию"><svg class="strelka-top" viewbox="0 0 60 100" xmlns="http://www.w3.org/2000/svg"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z"></path></svg></a></td>
-        <td style="text-align: right;"><a href="index2.html" title="переход на следующую страницу"><svg class="strelka-right" viewbox="0 0 60 100" xmlns="http://www.w3.org/2000/svg"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z"></path></svg></a></td>
-    </tr>
-</table>
 </body>
 </html>
