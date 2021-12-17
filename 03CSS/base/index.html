@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{ 
+    margin: 0;
+    padding: 0;
+  }
+ul {
+list-style: none; 
+margin: 0;
+padding: 0;
+letter-spacing : -.36em;
+font-size : 0;
+}
+.topmenu > li {
+letter-spacing: normal;
+font-size : 14px;
+display: inline-block;
+margin-right: 0;
+position: relative;
+}
+.topmenu > li:last-child {
+margin-right: 0;
+}
+a {
+display: block;
+padding: 10px 15px;
+text-decoration: none;
+outline: none;
+border: 1px solid black;
+border-radius: 10px;
+transition: 0.5s linear;
+background-color: #bbb2b0 ;
+color: #5e504d;
+}
+.submenu {
+letter-spacing: normal;
+font-size : 14px;
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1;  
+}
+.one .submenu {
+display: none;
+}
+.one ul li:hover a{
+background-color: #5e504d;
+color: #bbb2b0;
+}
+.one ul li:hover .submenu {   
+display: block;
+}
+.one ul li:hover .submenu a{
+background: #bbb2b0;
+color: #5e504d;  
+}
+.one .topmenu .submenu li:hover a{
+background-color: #5e504d;
+color: #bbb2b0;
+}
+@media all and (max-width: 620px){
+.topmenu > li {
+width: 140px;
+display: block;
+}
+.submenu {
+top: 0;
+left: 140px;
+}
+}          
+ </style>
+<body>
+    <div class="one">
+        <ul class="topmenu">
+          <li><a href="#">Понедельник</a></li>
+          <li><a href="#">Вторник</a></li>
+          <li><a href="#">Среда</a>
+            <ul class="submenu">
+              <li><a href="#">Завтрак</a></li>
+              <li><a href="#">Обед</a></li>
+              <li><a href="#">Ужин</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Четверг</a></li>
+          <li><a href="#">Пятница</a></li>
+          <li><a href="#">Суббота</a></li>
+          <li><a href="#">Воскресенье</a></li>
+        </ul>
+    </div>
+</body>
+</html>
