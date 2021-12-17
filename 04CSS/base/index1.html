@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoverPractice</title>
+    <style>
+        .someDiv{
+            border: 1px solid gray;
+            border-radius: 0px 15px 0px 15px;
+            text-indent: 20px;
+            padding-bottom: 10px;
+        }
+        ul{
+            list-style-image: url('img/file.jpg');
+        }
+        ul > li img{
+            display: none;
+        }
+        ul > li:hover img{
+            display:inline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов</h1>
+<div class="someDiv">
+    .DOC или .doc (от англ.  - расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.
+    Расширение .DOC часто использовалось для обозначения простыъ текстовых файлов без формирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+    <a href="#">Документ MS Word</a><img src="img/doc.jpg" alt="docMW">
+</div>
+<div class="someDiv">
+    Portable Document Format (<img src="img/link.png" alt="link"><a href="#">PDF</a>) - межплатформенный формат электронных документов, разработанный Adobe Systems c использованием ряда возможностей языка Postsscript.<br>
+    <a href="#">Документ PDF</a><img src="img/pdf.png" alt="pdfDoc">
+    </div>
+<div class="someDiv">
+    ZIP -популярный формат сжатия данных и архивации файлов. Файл в этом расширении обычно имеет формат <img src="img/link.png" alt="link"><a href="#">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из
+    него извлечь путем распоковки с помощью специальной программы.<br>
+    <a href="#">Архив</a><img src="img/archive.gif" alt="archive">
+</div>
+<div>
+    <h1>Это список файлов</h1>
+    <ul>
+        <li><a href="#">Документ MS Word</a><img src="img/doc.jpg" alt="docMW"></li>
+        <li><a href="#">Документ PDF</a><img src="img/pdf.png" alt="pdfDoc"></li>
+        <li><a href="#">Архив</a><img src="img/archive.gif" alt="archive"></li>
+    </ul>
+</div>
+</body>
+</html>
