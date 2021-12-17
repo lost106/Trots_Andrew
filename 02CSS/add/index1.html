@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+    <style>
+        .fstramka{
+            float: left;
+            background: 
+  			url('../img/l-t.png') no-repeat top left, url('../img/r-t.png') no-repeat top right, url('../img/l-b.png') no-repeat bottom left,
+  			url('../img/r-b.png') no-repeat bottom right, url('../img/l.png') repeat-y left, url('../img/t.png') repeat-x top, 
+  			url('../img/r.png') repeat-y right,	url('../img/b.png') repeat-x bottom;
+            width:40%;
+            padding: 2.5em;
+            margin-bottom: 20px;
+        }
+        .secndramka{
+    float: right;
+    width: 50%;
+        }
+        .thirdramka{
+            margin-bottom: 20px;
+            width: 70%;
+            padding: 2.5em;
+            clear: both;
+            border-radius: 20px;
+            background-image: url('../img/t-l.gif'), url('../img/t-r.gif'), url('../img/b-l.gif'), url('../img/b-r.gif'), url('../img/l.gif'), url('../img/r.gif'), url('../img/t.gif'), url('../img/b.gif');
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+            background-position: top left, top right, bottom left, bottom right, left, right, top, bottom ;
+        }
+        .fourthramka{
+                border-style:solid;
+                border-width: 2.5em; 
+                width:60%;
+    			border-image-source: url('../img/ramka.png') ;
+    			border-image-slice: 33%;
+    			border-image-repeat: stretch; 
+    			border-image-width: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="fstramka">
+	   			<h2>Рамка №1 URL - REPEAT - POSITION</h2>
+	   			Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+    </div>     
+    <div class="secndramka">
+        <div style="background: url('../img/l.png') repeat-y left">
+            <div style="background: url('../img/t.png') repeat-x top">
+            <div style="background: url('../img/r.png') repeat-y right">
+            <div style="background: url('../img/b.png') repeat-x bottom">
+                <div style="background: url('../img/l-t.png') no-repeat top left">
+                <div style="background: url('../img/r-t.png') no-repeat top right">
+                <div style="background: url('../img/l-b.png') no-repeat bottom left">
+                <div style="background: url('..//img/r-b.png') no-repeat bottom right">
+                    <div style=" padding:2.5em">
+                        <h2>Рамка 2 9DIV</h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                    </div>
+             </div>
+             </div>
+             </div>
+             </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="thirdramka">
+        <h2>Рамка 3 Пример с занятия</h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+    </div>
+    <div class="fourthramka">
+        <h2>Рамка №4 С использованием стилевого свойства border-image</h2>
+	   			Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis alias nobis adipisci, quod delectus facere fuga voluptas repellat, est, voluptate cupiditate nesciunt. Tempore dolorem iusto aut ad facilis libero nam?<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum laudantium asperiores minima ab reprehenderit optio perspiciatis, iure consectetur quae laboriosam quidem! Laboriosam temporibus atque dicta, labore repellat repudiandae ullam!<br>
+
+    </div>
+</body>
+</html>
