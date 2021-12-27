@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input{
+        margin-top: 5px;
+      }
+      input[type="submit"]{
+        margin-top: 15px;
+      }
+      fieldset{
+        display: inline;
+      }
+    </style>
+</head>
+<body>
+    
+<div><h1>Проверка пароля</h1></div>
+<div>
+  <form action="#" name="auth1" method="get">
+    
+    <fieldset>             
+  
+        <input type="text" name="password" id="password" required><label for="password" value="3">* Пароль<br></label>
+         
+        <input type="text" name="repeatPassword" id="repeatPassword" required><label for="repeatPassword">* Повторите пароль<br></label>
+  
+        <input type="submit" value="Отправить"  id="accept"><label for="accept"></label> 
+                    
+    </fieldset>
+</div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>       
+      $(document).ready(function () {   
+        $('#password').keyup(function(){
+          var password = $('#password').val();
+          var repeatPassword = $('#repeatPassword').val();
+        if ( password==repeatPassword){
+          $('input[type="text"]').css('backgroundColor', 'green');
+        }
+        else {
+          $('input[type="text"]').css('backgroundColor', 'red');
+        }
+        });
+        $('#repeatPassword').keyup(function(){
+          $('#password').keyup();
+        })  ;    
+      });
+    </script>
+</body>
+</html>
