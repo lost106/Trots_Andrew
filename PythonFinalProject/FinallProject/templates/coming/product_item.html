@@ -1,0 +1,28 @@
+<div class="col-lg-3">
+    <div class="product-item">
+        <div>
+            <a href="{% url 'products:product' product_image.product.id %}">
+                <img src="{{ product_image.image.url }}" alt="Фото товара" width="200px" height="240px" class="">
+            </a>
+            {% if product_image.product.discount %}
+                <div class="discount-container">
+                    <span>Скидка {{ product_image.product.discount }}%</span>
+                    </div>
+                {% endif %}
+    </div>
+    <h4>{{ product_image.product.name }}</h4>
+    <p>
+        {{ product_image.product.description|truncatechars_html:80 }}
+    </p>
+    <div>
+        {{ product_image.product.price }} <b>BYN</b>
+    </div>
+    <div class="add-to-cart-btn">
+        <button type="submit"  class="btn btn-dark">
+
+            <a style="color: #f9fefc; text-decoration: none" href="{% url 'products:product' product_image.product.id %}">Купить</a>
+        </button>
+    </div>
+</div>
+
+</div>

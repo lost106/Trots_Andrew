@@ -1,0 +1,71 @@
+<nav class="navbar navbar-default navbar-top">
+    <p>TOP NAVBAR</p>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-warning navbar-main sticky-top ">
+    <div class="container-fluid col-lg-8">
+        <a class="navbar-brand" href="#">
+
+            My Store
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent, #Basket"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">На главную</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/checkout/">Перейти в корзину</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid basket-content col-lg-4">
+        <div class="collapse navbar-collapse" id="Basket">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Корзина
+                        <span id="basket_total_nmb">
+                            {% if products_total_nmb %}
+                                ({{ products_total_nmb }})
+                            {% else %}
+                                (0)
+                            {% endif %}
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu basket-items" id="basket_items" aria-labelledby="navbarDropdown">
+                        {% for product_in_basket in products_in_basket %}
+                            <li class="dropdown-item">
+                                {{ product_in_basket.product.name }}
+                                {{ product_in_basket.nmb }}шт. по {{ product_in_basket.price_per_item }} BYN <a
+                                    class="delete-item" href="" data-product_id="{{ product_in_basket.id }}">x</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+
+            </ul>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+
+        </div>
+    </div>
+
+
+</nav>
